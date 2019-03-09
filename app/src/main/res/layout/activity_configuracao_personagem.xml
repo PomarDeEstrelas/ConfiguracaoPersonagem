@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ConfiguracaoPersonagemActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meu Avatar"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <TextView
+        style="@style/label_cadastro"
+        android:text="Nome do Personagem"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qual é o nome do seu personagem?"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Classe"/>
+
+    <Spinner
+        android:id="@+id/spClasses"
+        android:entries="@array/classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <TextView
+        style="@style/label_cadastro"
+        android:textSize="18sp"
+        android:text="Sexo"/>
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbFeminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:layout_weight="0.5"/>
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:layout_weight="0.5"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btJogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogar"/>
+
+</LinearLayout>
